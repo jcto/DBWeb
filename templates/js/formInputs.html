@@ -1,0 +1,17 @@
+<ion-view title="My Page">
+	<ion-content>
+		<div class="bar bar-header">
+			<div class="h1 title">cssComponent</div>
+		</div>
+		<div class="h44">
+
+		</div>
+		<div class="list">
+			<ion-checkbox ng-model="isChecked" >Checkbox Label</ion-checkbox>
+			<ion-radio ng-model="choice" ng-value="'A'" ng-click="hand(choice)">Choose A</ion-radio>
+			<ion-radio ng-model="choice" ng-value="'B'" ng-click="hand(choice)">Choose B</ion-radio>
+			<ion-radio ng-model="choice" ng-value="'C'" ng-click="hand(choice)">Choose C</ion-radio>
+			<ion-toggle ng-model="airplaneMode" toggle-class="toggle-calm" ng-click="hand(airplaneMode)">Airplane Mode</ion-toggle>
+		</div>
+	</ion-content>
+</ion-view>
