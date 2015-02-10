@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			if (window.navigator.geolocation) {
+                var options = {
+                    enableHighAccuracy: true
+                };
+                window.navigator.geolocation.getCurrentPosition(function(position) {
+                    $scope.centerLongitude = position.coords.longitude;
+                    $scope.centerLatitude = position.coords.latitude;
+                    alert(position.coords.longitude+":"+position.coords.latitude)
+                }, function(error) {
+                    
+                         alert("地位失败");
+                }, options);
+            } else {
+                alert("您的手机不支持获取位置信息");
+            }
+		</script>
+	</body>
+</html>

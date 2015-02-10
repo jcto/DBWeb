@@ -181,8 +181,9 @@ angular.module('starter.controllers', [])
 				console.log('Tapped!', res);
 			});
 			$timeout(function() {
+				console.log('Tapp!');
 				myPopup.close(); //close the popup after 3 seconds for some reason
-			}, 3000);
+			}, 10000);
 		};
 		// A confirm dialog
 		$scope.showConfirm = function() {
